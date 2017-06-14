@@ -22,7 +22,12 @@
 
         <script>
 
-                var editor = new Quill('#container');
+                var options = {
+                    placeholder: '내용을 작성해주세요.',
+                    // readOnly: true,
+                    theme: 'snow' // 테마 선택 : https://quilljs.com/docs/themes
+                };
+                var editor = new Quill('#container', options);
 
                 console.log(editor);
 
